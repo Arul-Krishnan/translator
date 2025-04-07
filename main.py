@@ -12,6 +12,10 @@ model = whisper.load_model("base")
 
 app = FastAPI()
 
+@app.get("/")
+async def root():
+    return JSONResponse(content={"message": "Welcome to the Whisper API!"})
+
 @app.post("/transcribe")
 async def transcribe_audio(file: UploadFile = File(...)):
     try:
