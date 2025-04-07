@@ -10,7 +10,7 @@ os.environ["FFMPEG_BINARY"] = r"C:\xampp1\htdocs\ffmpeg\bin\ffmpeg.exe"
 os.environ["FFPROBE_BINARY"] = r"C:\xampp1\htdocs\ffmpeg\bin\ffprobe.exe"
 
 # ✅ Load Whisper model (use "tiny", "base", "small", "medium", "large")
-model = whisper.load_model("tiny")
+model = whisper.load_model("base")
 
 app = FastAPI()
 
